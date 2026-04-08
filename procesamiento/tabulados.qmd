@@ -12,13 +12,21 @@ La encuesta se llevó a cabo con la finalidad de obtener información que permit
 
 Para mayor información y descarga de datos, cuestionarios, etcétera visite el enlace: [ENSU](h#ttps://www.inegi.org.mx/programas/ensu/)
 
+Puedes ir al repositorio en este enlace: [Tabluados ENSU](https://github.com/entropiacf/ensu-tabulados)
+
 ### Carga de bibliotecas
 
 ```{r}
-pacman::p_load(#Rcpp, remotes,  
-               kable, readr, tidyr, dplyr, janitor, srvyr, here)
 
+library(readr)
+library(tidyr)
+library(dplyr)
+library(janitor)
+library(srvyr)
+suppressPackageStartupMessages(library(here))
 ```
+
+-   Como nota: elimino los mensajes de la biblioteca `here` para que no muestre la ruta en la que se inicia el proyecto.
 
 ### Carga de datos
 
